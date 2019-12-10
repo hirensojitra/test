@@ -10,6 +10,7 @@ import { DemoComponent } from './demo/demo.component';
 
 import { SocialLoginModule } from 'angularx-social-login';
 import { AuthServiceConfig, GoogleLoginProvider, FacebookLoginProvider} from 'angularx-social-login';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 const config = new AuthServiceConfig([
@@ -42,7 +43,8 @@ export function provideConfig() {
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    SocialLoginModule
+    SocialLoginModule,
+    BrowserAnimationsModule
   ],
   providers: [
     {
